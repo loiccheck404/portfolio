@@ -17,6 +17,10 @@
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="sun-icon">☀️</span>
+          <span class="moon-icon">🌙</span>
+        </button>
         <div class="menu-toggle">
           <span></span>
           <span></span>
@@ -52,7 +56,35 @@
         <div class="projects-grid">
           <!-- Project 1: VISNET -->
           <div class="project-card">
-            <div class="project-image visnet-bg">
+            <div class="project-image-container">
+              <div class="project-carousel">
+                <img
+                  src="images/visnet-1.png"
+                  alt="VISNET Login"
+                  class="carousel-image active"
+                />
+                <img
+                  src="images/visnet-2.png"
+                  alt="VISNET Dashboard"
+                  class="carousel-image"
+                />
+                <img
+                  src="images/visnet-3.png"
+                  alt="VISNET Analytics"
+                  class="carousel-image"
+                />
+                <img
+                  src="images/visnet-4.png"
+                  alt="VISNET Users"
+                  class="carousel-image"
+                />
+              </div>
+              <button class="carousel-btn prev" onclick="changeSlide(this, -1)">
+                ‹
+              </button>
+              <button class="carousel-btn next" onclick="changeSlide(this, 1)">
+                ›
+              </button>
               <div class="project-overlay">
                 <div class="project-links">
                   <a
@@ -65,15 +97,16 @@
               </div>
             </div>
             <div class="project-info">
-              <h3>VISNET E-commerce</h3>
+              <h3>VISNET Learning Platform</h3>
               <p>
-                A live e-commerce platform with modern UI, product browsing, and
-                secure checkout functionality.
+                Educational platform where teachers create and publish courses
+                for students. Features user authentication, course management,
+                analytics dashboard, and role-based access control.
               </p>
               <div class="tech-stack">
                 <span class="tech-tag">JavaScript</span>
                 <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">Full-Stack</span>
+                <span class="tech-tag">EdTech</span>
               </div>
             </div>
           </div>
@@ -252,7 +285,11 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container"></div>
+      <div class="container">
+        <p>&copy; 2025 Zaro. Built from scratch with ❤️</p>
+      </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
