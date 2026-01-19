@@ -169,7 +169,35 @@
 
           <!-- Project 3: Student Portal -->
           <div class="project-card">
-            <div class="project-image portal-bg">
+            <div class="project-image-container">
+              <div class="project-carousel">
+                <img
+                  src="images/portal-1.png"
+                  alt="Student Portal Login"
+                  class="carousel-image active"
+                />
+                <img
+                  src="images/portal-2.png"
+                  alt="Student Portal Dashboard"
+                  class="carousel-image"
+                />
+                <img
+                  src="images/portal-3.png"
+                  alt="Student Portal Results"
+                  class="carousel-image"
+                />
+                <img
+                  src="images/portal-4.png"
+                  alt="Student Portal Payments"
+                  class="carousel-image"
+                />
+              </div>
+              <button class="carousel-btn prev" onclick="changeSlide(this, -1)">
+                ‹
+              </button>
+              <button class="carousel-btn next" onclick="changeSlide(this, 1)">
+                ›
+              </button>
               <div class="project-overlay">
                 <div class="project-links">
                   <a
