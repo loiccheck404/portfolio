@@ -113,7 +113,35 @@
 
           <!-- Project 2: TODO App -->
           <div class="project-card">
-            <div class="project-image todo-bg">
+            <div class="project-image-container">
+              <div class="project-carousel">
+                <img
+                  src="images/todo-1.png"
+                  alt="TODO App Empty State"
+                  class="carousel-image active"
+                />
+                <img
+                  src="images/todo-2.png"
+                  alt="TODO App with Tasks"
+                  class="carousel-image"
+                />
+                <img
+                  src="images/todo-3.png"
+                  alt="TODO App Filtering"
+                  class="carousel-image"
+                />
+                <img
+                  src="images/todo-4.png"
+                  alt="TODO App Delete"
+                  class="carousel-image"
+                />
+              </div>
+              <button class="carousel-btn prev" onclick="changeSlide(this, -1)">
+                ‹
+              </button>
+              <button class="carousel-btn next" onclick="changeSlide(this, 1)">
+                ›
+              </button>
               <div class="project-overlay">
                 <div class="project-links">
                   <a
