@@ -120,6 +120,13 @@ body {
   color: var(--primary-color);
 }
 
+.logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
+  border-radius: 35px;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
