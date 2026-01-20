@@ -81,14 +81,14 @@ window.addEventListener("scroll", () => {
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (scrollY >= sectionTop - 200) {
+    if (scrollY >= sectionTop - 100) {
       current = section.getAttribute("id");
     }
   });
 
   document.querySelectorAll(".nav-link").forEach((link) => {
     link.classList.remove("active");
-    if (link.getAttribute("href").slice(1) === current) {
+    if (link.getAttribute("href") === "#" + current) {
       link.classList.add("active");
     }
   });

@@ -565,6 +565,8 @@ section {
 /* Contact Section */
 .contact {
   background: var(--bg-light);
+  padding: 120px 0;
+  min-height: 80vh;
 }
 
 .contact-content {
